@@ -1,18 +1,22 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
+// Importações das páginas (Caminhos verificados no seu projeto)
 import Login from "../pages/Login";
+import Dashboard from "../pages/Dashboard";
+import Form from "../pages/Form";
+import FormUsuario from "../pages/FormUsuario";
 import Config from "../pages/Config";
-import DashBoard from "../pages/Dashboard";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/config" element={<Config />} />
-        <Route path="/dashboard" element={<DashBoard />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/cadastro-usuario" element={<FormUsuario />} />
+      <Route path="/formulario" element={<Form />} />
+      <Route path="/configuracoes" element={<Config />} />
+    </Routes>
   );
 };
 
