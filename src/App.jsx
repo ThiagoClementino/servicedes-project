@@ -1,6 +1,8 @@
-import "./App.css";
-import Login from "./assets/pages/login";
+import React from "react";
+import AppRoutes from "./assets/Routes/AppRoutes";
 
-export default function App() {
-  return <Login />;
-}
+const App = () => {
+  return <AppRoutes />;
+};
+
+export default App;

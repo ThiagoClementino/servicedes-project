@@ -28,11 +28,11 @@ const Login = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="name">Usuário</label>
         <input {...register("user")} />
-        <p>{errors.user.message}</p>
+        <p>{errors.user?.message}</p>
 
         <label htmlFor="password">Senha</label>
         <input {...register("password")} />
-        <p>{errors.password.message}</p>
+        <p>{errors.password?.message}</p>
 
         <button type="submit">Enviar</button>
       </form>
